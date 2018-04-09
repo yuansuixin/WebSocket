@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+</head>
+<body>
+<script>
+    //包括了发起连接请求，向服务端发送特殊的值，这个都是浏览器内置的模块帮我们实现的
+    ws = new WebSocket('ws://127.0.0.1:8002');
+    //打开的时候执行
+    ws.onopen = function () {
+        console.log(1111);
+        ws.send('hello');
+    }
+    //服务端推送的消息执行
+    ws.onmessage = function (event) {
+        console.log(event);
+    };
+    //服务端主动要断开，执行
+    ws.onclose = function () {
+
+    }
+
+
+</script>
+
+</body>
+</html>

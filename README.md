@@ -23,10 +23,8 @@
     - 创建好链接之后，**收发数据**
         - 客户端和服务端传输数据时，需要对数据进行【封包】和【解包】操作，客户端的JavaScript类库已经封装了【封包】和【解包】过程，但socket服务端需要手动实现。
 
-
+[WebSocket详细解析](https://yuansuixin.github.io/2018/04/10/websocket/ "WebSocket详细解析")
 [解包和封包原理](https://yuansuixin.github.io/2018/04/09/websocket-data/ "解包和封包原理")
-
-
 
 
 
